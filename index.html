@@ -17,8 +17,19 @@
     <script src="libraries/parallax.js/parallax.min.js"></script>
     <script>
     	$(function() {
-		    
-		});
+          var scrollPos;
+          var navOpacityThreshold = 200;
+          $(window).scroll(function()
+          {
+            scrollPos = $(window).scrollTop();
+            if (true)
+            {
+              var opacity = scrollPos / navOpacityThreshold;
+              var rgba = `rgba(10, 10, 10, ${opacity})`;
+              $(".navbar").css("background-color", rgba);
+            }
+          });
+		  });
     </script>
   </head>
   <body>
