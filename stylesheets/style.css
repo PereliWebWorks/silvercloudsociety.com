@@ -38,6 +38,12 @@ section {
   font-size: 1.2em;
 }
 
+#navbar-collapse
+{
+  border-color: rgba(10, 10, 10, .8);
+  background-color: rgba(10, 10, 10, .8);
+}
+
 .image_container img{
   margin: 0;
   width: 50%;

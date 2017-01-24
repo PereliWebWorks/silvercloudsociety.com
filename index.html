@@ -16,7 +16,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="libraries/parallax.js/parallax.min.js"></script>
     <script>
+    var navbarOpen = false;
+    var oldNavColor;
+
+
     	$(function() {
+
+          $(".navbar-toggle").click(function()
+          {
+            console.log("h");
+            navbarOpen = !navbarOpen;
+            if (navbarOpen)
+            {
+              oldNavColor = $(".navbar").css("background-color");
+              $(".navbar").css("background-color", "rgba(10, 10, 10, .8)");
+            }
+            else
+            {
+              $(".navbar").css("background-color", oldNavColor);
+            }
+
+          })
+
           var scrollPos;
           var navOpacityThreshold = 200;
           $(window).scroll(function()
