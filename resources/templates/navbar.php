@@ -14,10 +14,10 @@
   	    <!-- Collect the nav links, forms, and other content for toggling -->
   	    <div class="collapse navbar-collapse" id="navbar-collapse">
   	      <ul class="nav navbar-nav navbar-right">
-  	        <li><a href="#">Home</a></li>
-  	        <li><a href="#">About</a></li>
-  	        <li><a href="#">Contact</a></li>
-  	        <li><a href="#">Links</a></li>
+  	        <li><a href="index.php">Home</a></li>
+  	        <li><a href="about.php">About</a></li>
+  	        <li><a href="contact.php">Contact</a></li>
+  	        <!--<li><a href="#">Links</a></li>-->
   	      </ul>
   	    </div><!-- /.navbar-collapse -->
   	  </div><!-- /.container-fluid -->

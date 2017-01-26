@@ -3,15 +3,16 @@
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
-		data-image-src="images/girl_with_bike.jpg" data-natural-width="1000" data-natural-height="527">
-		  <h1 class="hidden-xs hidden-sm parallax-header">ABOUT</h1>
-		  <h1 class="visible-xs visible-sm parallax-header parallax-header-xs">ABOUT</h1>
+		data-image-src="images/skyline.jpg" data-natural-width="1000" data-natural-height="527">
+		  <h1 class="hidden-xs hidden-sm parallax-header">CONTACT</h1>
+		  <h1 class="visible-xs visible-sm parallax-header parallax-header-xs">CONTACT</h1>
     </div>
 
     <section class="text-content">
       <div class="container">
+        <?php include(__DIR__ . "/../resources/templates/flashMessages.php"); ?>
       	<h3>Please feel free to give us a call at ***-***-**** or fill out the form below.</h3>
-        <form>
+        <form id="contact-form" method="post" action="mailers/contact.php">
           <span class="row">
             <div class="form-group col-xs-4">  
               <label for="contact-category">Category *</label>
@@ -26,29 +27,46 @@
           <span class="row">
             <div class="form-group col-xs-6">
               <label for="contact-first-name">First Name *</label>
-              <input type="text" id="contact-first-name" name="first_name" required="true" class="col-xs-12"/>
+              <input type="text" id="contact-first-name" name="first_name" required="true" />
             </div>
             <div class="form-group col-xs-6">
               <label for="contact-last-name">Last Name *</label>
-              <input type="text" id="contact-last-name" name="last_name" required="true" class="col-xs-12"/>
+              <input type="text" id="contact-last-name" name="last_name" required="true" />
             </div>
           </span>
-          <div class="form-group">
-          </div>
-          <div class="form-group">
-          </div>
-          <div class="form-group">
-          </div>
-          <div class="form-group">
-          </div>
-          <div class="form-group">
-          </div>
+          <span class="row">
+            <div class="form-group col-xs-12">
+              <label for="contact-organization">Organization</label>
+              <input type="text" id="contact-organization" name="organization" />
+            </div>
+          </span>
+          <span class="row">
+            <div class="form-group col-xs-12">
+              <label for="contact-email">Email *</label>
+              <input type="email" id="contact-email" name="email" required="true" />
+            </div>
+          </span>
+          <span class="row">
+            <div class="form-group col-xs-12">
+              <label for="contact-subject">Subject *</label>
+              <input type="text" id="contact-subject" name="subject" required="true" />
+            </div>
+          </span>
+          <span class="row">
+            <div class="form-group col-xs-12">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" rows="5" required="true"></textarea>
+            </div>
+          </span>
+          <span class="row">
+            <div class="col-xs-12">
+              <button type="submit" class="btn btn-default" id="contact-form-submit-btn">Submit</button>
+            </div>
+          </span>
         </form>
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/wedding.jpg" data-natural-width="1000" data-natural-height="714">
-    	<!--<h3 class="parallax-header" id="parallax-header-2">We strive to be a creative, artistic and redemptive presence in the way we do our business and the quality of our work.</h3>-->
-    </div>
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/wedding.jpg" data-natural-width="1000" data-natural-height="714"></div>
 
 <?php include(__DIR__ . "/../resources/templates/foot.php"); ?>
