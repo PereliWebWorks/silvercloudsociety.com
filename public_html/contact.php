@@ -3,16 +3,15 @@
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
-		data-image-src="images/skyline.jpg" data-natural-width="1000" data-natural-height="527">
-		  <h1 class="hidden-xs hidden-sm parallax-header">CONTACT</h1>
-		  <h1 class="visible-xs visible-sm parallax-header parallax-header-xs">CONTACT</h1>
+		data-image-src="images/man_on_rocks.jpg" data-natural-width="3000" data-natural-height="2000">
+		  <h1 class="parallax-header">CONTACT</h1>
     </div>
 
     <section class="text-content">
       <div class="container">
         <?php include(__DIR__ . "/../resources/templates/flashMessages.php"); ?>
       	<h3>Please feel free to give us a call at ***-***-**** or fill out the form below.</h3>
-        <form id="contact-form" method="post" action="mailers/contact.php">
+        <form id="contact-form" enctype="multipart/form-data" method="post" action="mailers/contact.php">
           <span class="row">
             <div class="form-group col-md-4 col-xs-12">  
               <label for="contact-category">Category *</label>
@@ -59,6 +58,13 @@
             </div>
           </span>
           <span class="row">
+            <div class="form-group col-xs-12">
+              <label for="contact-resume">Resume</label>
+              <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+              <input type="file" id="contact-resume" name="resume" />
+            </div>
+          </span>
+          <span class="row">
             <div class="col-md-2 col-xs-12">
               <input type="submit" class="btn btn-default" id="contact-form-submit-btn" value="Send" />
             </div>
@@ -67,6 +73,6 @@
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/wedding.jpg" data-natural-width="1000" data-natural-height="714"></div>
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/path.jpg" data-natural-width="4616" data-natural-height="2699"></div>
 
 <?php include(__DIR__ . "/../resources/templates/foot.php"); ?>

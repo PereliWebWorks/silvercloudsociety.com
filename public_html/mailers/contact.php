@@ -27,6 +27,18 @@
 		$subject = $_POST["subject"];
 		$message = $_POST["message"];
 		$organization = isset($_POST["organization"]) ? $_POST["organization"] : false;
+		//Deal with file stuff here
+		if (isset($_POST["resume"]))
+		{
+			$uploadFile = UPLOAD_DIR . basename($_FILES['resume']['name']);
+			if (!move_uploaded_file($_FILES['resume']['tmp_name'], $uploadfile)) 
+			{
+				Flasher::set("danger", "Possible file upload attack!");
+			    header("Location: " . $redirectURL);
+				die();  
+			} 
+
+		}
 
 		$mail = new PHPMailer;
 		$mail->setFrom("admin@" . HOST, "$firstName $lastName");
@@ -34,6 +46,7 @@
 		$mail->addReplyTo($email, "$firstName $lastName");
 		$mail->Subject = $subject;
 		$mail->Body = $message;
+		$mail->AddAttachment($uploadFile);
 		if (!$mail->send())
 		{
 			Flasher::set("danger", "There was an error. Try again later.");

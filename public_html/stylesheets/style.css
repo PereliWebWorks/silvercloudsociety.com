@@ -27,6 +27,10 @@ body
   margin-top: 0;
 }
 
+#about-parallax-header{
+
+}
+
 h1
 {
   font-family: chase;
@@ -38,10 +42,16 @@ h1.parallax-header{
   font-weight: 900;
 }
 
-h1.parallax-header.parallax-header-xs
+/*For small devices, make the parallax headers smaller so they fit*/
+@media (max-width: 576px)
 {
-  font-size: 2.6em;
+  h1.parallax-header
+  {
+    font-size: 2.6em;
+  }
 }
+
+
 
 
 .text-content
@@ -49,6 +59,8 @@ h1.parallax-header.parallax-header-xs
   /*padding: 25px 0 25px;*/
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 input, textarea
@@ -58,12 +70,20 @@ input, textarea
 }
 
 
-.image_container img{
+.centered_img{
   margin: 0;
   width: 50%;
   margin-left: 25%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+@media (max-width: 576px)
+{
+  .centered_img{
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .text-content a {
