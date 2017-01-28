@@ -14,7 +14,7 @@
       	<h3>Please feel free to give us a call at ***-***-**** or fill out the form below.</h3>
         <form id="contact-form" method="post" action="mailers/contact.php">
           <span class="row">
-            <div class="form-group col-xs-4">  
+            <div class="form-group col-md-4 col-xs-12">  
               <label for="contact-category">Category *</label>
               <select class="form-control" id="contact-category" name="category" class="">
                 <option value="1">General Question</option>
@@ -25,11 +25,11 @@
             </div>
           </span>
           <span class="row">
-            <div class="form-group col-xs-6">
+            <div class="form-group col-md-6 col-xs-12">
               <label for="contact-first-name">First Name *</label>
               <input type="text" id="contact-first-name" name="first_name" required="true" />
             </div>
-            <div class="form-group col-xs-6">
+            <div class="form-group col-md-6 col-xs-12">
               <label for="contact-last-name">Last Name *</label>
               <input type="text" id="contact-last-name" name="last_name" required="true" />
             </div>
@@ -59,8 +59,8 @@
             </div>
           </span>
           <span class="row">
-            <div class="col-xs-12">
-              <button type="submit" class="btn btn-default" id="contact-form-submit-btn">Submit</button>
+            <div class="col-md-2 col-xs-12">
+              <input type="submit" class="btn btn-default" id="contact-form-submit-btn" value="Send" />
             </div>
           </span>
         </form>

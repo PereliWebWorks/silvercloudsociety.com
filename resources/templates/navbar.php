@@ -8,7 +8,9 @@
   	        <span class="icon-bar"></span>
   	        <span class="icon-bar"></span>
   	      </button>
-  	      <a class="navbar-brand" href="#">Marcus Goss Productions</a>
+  	      <a class="navbar-brand" href="index.php">
+            <img src="images/logo.png" class="img-responsive" />
+          </a>
   	    </div>
 
   	    <!-- Collect the nav links, forms, and other content for toggling -->

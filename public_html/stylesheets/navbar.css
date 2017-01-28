@@ -1,0 +1,29 @@
+
+.navbar
+{
+	background-color: rgba(51, 51, 50, .8);
+	border: 0;
+}
+
+.nav a, .navbar-brand{
+  color: rgb(240, 241, 238) !important;
+  font-size: 1em;
+}
+
+.navbar-brand{
+  padding: 0
+}
+
+.navbar-brand img
+{
+  height: 100%;
+}
+
+
+#navbar-collapse
+{
+  /*
+  border-color: rgba(10, 10, 10, .8);
+  background-color: rgba(10, 10, 10, .8);
+  */
+}

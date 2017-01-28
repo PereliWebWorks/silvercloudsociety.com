@@ -2,7 +2,8 @@
 <?php include(__DIR__ . "/../resources/templates/head.php"); ?>
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/man.jpg" data-natural-width="1000" data-natural-height="563">
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-speed=".2"
+    data-bleed="10" data-image-src="images/man.jpg" data-natural-width="1000" data-natural-height="563">
 		  <h1 class="hidden-xs hidden-sm parallax-header">A JANESVILLE FILM & VIDEO PRODUCTION COMPANY</h1>
 		  <h1 class="visible-xs visible-sm parallax-header parallax-header-xs">A JANESVILLE FILM & VIDEO PRODUCTION COMPANY</h1>
     </div>
