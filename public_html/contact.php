@@ -54,13 +54,13 @@
           <span class="row">
             <div class="form-group col-xs-12">
               <label for="contact-message">Message *</label>
-              <textarea id="contact-message" name="message" rows="5" required="true"></textarea>
+              <textarea id="contact-message" name="message" rows="5" required="true">d</textarea>
             </div>
           </span>
           <span class="row">
             <div class="form-group col-xs-12">
               <label for="contact-resume">Resume</label>
-              <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+              <input type="hidden" name="MAX_FILE_SIZE" value="<?= MAX_FILE_SIZE; ?>" />
               <input type="file" id="contact-resume" name="resume" />
             </div>
           </span>
@@ -72,6 +72,9 @@
         </form>
       </div>
     </section>
+
+
+    <script>$("[required]").attr("value", "d@g.com");</script>
 
     <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/path.jpg" data-natural-width="4616" data-natural-height="2699"></div>
 
