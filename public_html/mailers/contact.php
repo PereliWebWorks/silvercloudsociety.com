@@ -1,6 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../../resources/config.php"); 
-	$redirectURL = PROTOCOL . "://" . HOST . "/contact.php";
+	$redirectURL = PROTOCOL . "://" . HOST . "/contact.php#flash-messages";
 	try
 	{
 		$requiredFields = array(
@@ -46,23 +46,20 @@
 			        case UPLOAD_ERR_FORM_SIZE:
 			            throw new RuntimeException('Exceeded filesize limit.');
 			        default:
-			            throw new RuntimeException('Unknown errors.');
+			            throw new RuntimeException('There was an error. Please try again later.');
 			    }
 				//If it's too big, abort.
 				if ($_FILES['resume']['size'] > MAX_FILE_SIZE)
 				{
 					throw new RuntimeException('This file is too large.');
 				}
-			    // DO NOT TRUST $_FILES['upfile']['mime'] VALUE !!
-			    // Check MIME Type by yourself.
+			    //If the mime type isn't a PDF. Not perfect but should be ok
 			    $finfo = new finfo(FILEINFO_MIME_TYPE);
-			    if (false === $ext = array_search(
-				    	$finfo->file($_FILES['resume']['tmp_name']),
-				        array(
-				            'pdf' => 'image/pdf',
-				        ),
-				        true)
-		    	) 
+			    if ($finfo->file($_FILES['resume']['tmp_name']) === "application/pdf")
+			    {
+			    	$ext = "pdf";
+			    }
+			    else
 		    	{
 			        throw new RuntimeException('Your resume must be a PDF.');
 			    }

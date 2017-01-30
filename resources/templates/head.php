@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Silver Cloud Society</title>
+    <?php
+        $pageName = explode(".", basename($_SERVER['PHP_SELF']))[0]; //Get page name without .php extension
+        $titleAddition =  $pageName === "index" ? "" : " | " . ucfirst($pageName) ;
+    ?>
+    <title>Silver Cloud Society<?= $titleAddition; ?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/navbar.css" rel="stylesheet" type="text/css" />

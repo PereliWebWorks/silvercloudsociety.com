@@ -1,5 +1,5 @@
 <?php 	if (Flasher::hasMessage()) : ?>
-	<div class="col-xs-12">
+	<div class="col-xs-12" id="flash-messages">
 		<?php 	foreach(Flasher::TYPES as $type) : ?>
 			<?php	if (Flasher::has($type)) : ?>
 						<div class="col-xs-12 col-md-8 col-md-offset-2">
