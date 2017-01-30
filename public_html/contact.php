@@ -59,7 +59,7 @@
           </span>
           <span class="row">
             <div class="form-group col-xs-12">
-              <label for="contact-resume">Resume</label>
+              <label for="contact-resume">Resume (PDF Only)</label>
               <input type="hidden" name="MAX_FILE_SIZE" value="<?= MAX_FILE_SIZE; ?>" />
               <input type="file" id="contact-resume" name="resume" />
             </div>

@@ -15,9 +15,7 @@
 		{
 			if (!isset($_POST[$field]))
 			{
-				Flasher::set("danger", "You're missing a required field.");
-				header("Location: " . $redirectURL);
-				die();
+				throw new RuntimeException("You're missing a required field.");
 			}
 		}
 		$category = $_POST["category"];
@@ -53,29 +51,27 @@
 				//If it's too big, abort.
 				if ($_FILES['resume']['size'] > MAX_FILE_SIZE)
 				{
-					throw new RuntimeException('Exceeded filesize limit.');
+					throw new RuntimeException('This file is too large.');
 				}
 			    // DO NOT TRUST $_FILES['upfile']['mime'] VALUE !!
 			    // Check MIME Type by yourself.
 			    $finfo = new finfo(FILEINFO_MIME_TYPE);
-			    print_r($finfo->file($_FILES['resume']['tmp_name']));
 			    if (false === $ext = array_search(
 				    	$finfo->file($_FILES['resume']['tmp_name']),
 				        array(
-				            'jpg' => 'image/jpeg',
-				            'png' => 'image/png',
-				            'gif' => 'image/gif',
 				            'pdf' => 'image/pdf',
 				        ),
 				        true)
 		    	) 
 		    	{
-			        throw new RuntimeException('Invalid file format.');
+			        throw new RuntimeException('Your resume must be a PDF.');
 			    }
 				//Try to move it. If it doesn't work, something is wrong.
 				$newFileName = sha1_file($_FILES['resume']['tmp_name']);
-				$uploadFile = UPLOAD_DIR . $newFileName . $ext;
-				$moveSuccess = move_uploaded_file($_FILES['resume']['tmp_name'], $uploadfile);
+				$uploadFile = UPLOAD_DIR . "$newFileName.$ext";
+				//$uploadFile = UPLOAD_DIR . basename($_FILES['resume']['name']);
+				//echo $_FILES['resume']['name'] . "<br/>";
+				$moveSuccess = move_uploaded_file($_FILES['resume']['tmp_name'], $uploadFile);
 				if (!$moveSuccess) 
 				{
 					throw new RuntimeException('Failed to move uploaded file.');
@@ -87,7 +83,7 @@
 				unlink($uploadFile); //Just to be safe.
 				Flasher::set("danger", $e->getMessage());
 			    echo $e->getMessage();
-			    //header("Location: " . $redirectURL);
+			    header("Location: " . $redirectURL);
 				die(); 
 			}
 		}
@@ -101,19 +97,19 @@
 		$mail->AddAttachment($uploadFile, "Resume");
 		if (!$mail->send())
 		{
-			Flasher::set("danger", "There was an error. Try again later.");
-			header("Location: " . $redirectURL);
-			die();
+			throw new RuntimeException('Failed to send email.');
 		}
+
 		Flasher::set("success", "Your message has been sent.");
-		//header("Location: " . $redirectURL);
-		die();
 	}
 	catch (Exception $e)
 	{
-		Flasher::set("danger", "There was an error.");
-		header("Location: " . $redirectURL);
-		die();
+		Flasher::set("danger", $e->getMessage());
 	}
-
+	unlink($_FILES['resume']['tmp_name']);
+	unlink($uploadFile); //Just to be safe.
+	header("Location: " . $redirectURL);
 ?>
+
+
+
