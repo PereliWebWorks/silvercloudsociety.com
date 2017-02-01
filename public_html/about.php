@@ -2,8 +2,8 @@
 <?php include(__DIR__ . "/../resources/templates/head.php"); ?>
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
-	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
-		data-image-src="images/baloon.jpg" data-natural-width="1920" data-natural-height="1307" id="about-parallax-header">
+	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10"
+		data-image-src="images/swing.jpg" data-natural-width="600" data-natural-height="600" id="about-parallax-header">
 		  <h1 class="parallax-header">ABOUT</h1>
     </div>
 
@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="-0.1" data-image-src="images/mansion.jpg" data-natural-width="4608" data-natural-height="3072">
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="-0.1" data-image-src="images/people.jpg" data-natural-width="700" data-natural-height="439">
     	<!--<h3 class="parallax-header" id="parallax-header-2">We strive to be a creative, artistic and redemptive presence in the way we do our business and the quality of our work.</h3>-->
     </div>
 

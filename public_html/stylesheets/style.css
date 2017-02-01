@@ -18,11 +18,25 @@ body
   font-size: 2em;
 }
 
+#main-content
+{
+  width: 100%;
+}
+
+@media (max-width: 768px)
+{
+  #main-content
+  {
+      position: absolute;
+  }
+}
 
 .parallax-container {
   height: 500px;
   width: 100%;
 }
+
+
 
 .parallax-header{
   text-align: center; 

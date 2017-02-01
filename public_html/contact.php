@@ -3,7 +3,7 @@
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
-		data-image-src="images/man_on_rocks.jpg" data-natural-width="3000" data-natural-height="2000">
+		data-image-src="images/piano.jpg" data-natural-width="640" data-natural-height="640">
 		  <h1 class="parallax-header">CONTACT</h1>
     </div>
 
@@ -78,6 +78,7 @@
 
     <script>$("[required]").attr("value", "d@g.com");</script>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/path.jpg" data-natural-width="4616" data-natural-height="2699"></div>
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" 
+      data-image-src="images/rollercoaster.jpg" data-natural-width="640" data-natural-height="640"></div>
 
 <?php include(__DIR__ . "/../resources/templates/foot.php"); ?>
