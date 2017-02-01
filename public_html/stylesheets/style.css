@@ -11,8 +11,10 @@
 body
 {
   font-family: corbert;
-  background-color: rgb(19, 82, 162);
-  color: rgb(240, 241, 238);
+  /*background-color: rgb(19, 82, 162);*/
+  background-color: #111;
+  /*color: rgb(240, 241, 238);*/
+  color: #bbb;
   font-size: 2em;
 }
 
@@ -63,12 +65,23 @@ h1.parallax-header{
   margin-right: 1em;
 }
 
-input, textarea
+input:not([type='file']), textarea
 {
   color: black;
+}
+
+input, textarea
+{
   width: 100%;
 }
 
+@media (max-width: 576px)
+{
+  input[type='file']
+  {
+    font-size: .7em;
+  }
+}
 
 .centered_img{
   margin: 0;

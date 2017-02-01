@@ -10,6 +10,11 @@
   font-size: 1em;
 }
 
+.navbar-default .navbar-collapse
+{
+  border: 0;
+}
+
 .navbar-brand{
   padding: 0
 }
@@ -19,6 +24,10 @@
   height: 100%;
 }
 
+.navbar a:hover
+{
+  color: #999 !important;
+}
 
 #navbar-collapse
 {

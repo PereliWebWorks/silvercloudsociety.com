@@ -7,10 +7,12 @@
 		  <h1 class="parallax-header">CONTACT</h1>
     </div>
 
+
     <section class="text-content">
       <div class="container">
         <?php include(__DIR__ . "/../resources/templates/flashMessages.php"); ?>
       	<h3>Please feel free to give us a call at ***-***-**** or fill out the form below.</h3>
+
         <form id="contact-form" enctype="multipart/form-data" method="post" action="mailers/contact.php">
           <span class="row">
             <div class="form-group col-md-4 col-xs-12">  
@@ -39,6 +41,7 @@
               <input type="text" id="contact-organization" name="organization" />
             </div>
           </span>
+
           <span class="row">
             <div class="form-group col-xs-12">
               <label for="contact-email">Email *</label>
@@ -60,7 +63,6 @@
           <span class="row">
             <div class="form-group col-xs-12">
               <label for="contact-resume">Resume (PDF Only)</label>
-              <input type="hidden" name="MAX_FILE_SIZE" value="<?= MAX_FILE_SIZE; ?>" />
               <input type="file" id="contact-resume" name="resume" />
             </div>
           </span>
