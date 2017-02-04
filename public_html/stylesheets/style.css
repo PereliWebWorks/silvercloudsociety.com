@@ -8,6 +8,11 @@
   src: url(../fonts/Corbert-Regular.otf);
 }
 
+@font-face {
+  font-family: milton;
+  src: url(../fonts/Milton_One_Bold.otf);
+}
+
 body
 {
   font-family: corbert;
@@ -32,8 +37,13 @@ body
 }
 
 .parallax-container {
-  height: 500px;
+  height: 700px;
   width: 100%;
+}
+
+.parallax-mirror
+{
+  opacity: .8;
 }
 
 
@@ -50,11 +60,24 @@ body
 h1
 {
   font-family: chase;
+  color: white;
+}
+
+
+.milton
+{
+  font-family: milton;
+}
+
+.milton-inline
+{
+  font-family: milton;
+  font-size: 2em;
 }
 
 h1.parallax-header{
   padding-top: 2.5em;
-  font-size: 4em;
+  font-size: 6em;
   font-weight: 900;
 }
 

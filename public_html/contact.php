@@ -4,14 +4,15 @@
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
 		data-image-src="images/piano.jpg" data-natural-width="640" data-natural-height="640">
-		  <h1 class="parallax-header">CONTACT</h1>
+		  <h1 class="parallax-header">Contact</h1>
     </div>
 
 
     <section class="text-content">
       <div class="container">
         <?php include(__DIR__ . "/../resources/templates/flashMessages.php"); ?>
-      	<h3>Please feel free to give us a call at ***-***-**** or fill out the form below.</h3>
+      	<h3 class="col-xs-12">Please submit any inquiries via the form below.</h3>
+        <div class="spacer row"></div>
 
         <form id="contact-form" enctype="multipart/form-data" method="post" action="mailers/contact.php">
           <span class="row">
@@ -57,7 +58,7 @@
           <span class="row">
             <div class="form-group col-xs-12">
               <label for="contact-message">Message *</label>
-              <textarea id="contact-message" name="message" rows="5" required="true">d</textarea>
+              <textarea id="contact-message" name="message" rows="5" required="true"></textarea>
             </div>
           </span>
           <span class="row">
@@ -75,8 +76,6 @@
       </div>
     </section>
 
-
-    <script>$("[required]").attr("value", "d@g.com");</script>
 
     <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" 
       data-image-src="images/rollercoaster.jpg" data-natural-width="640" data-natural-height="640"></div>

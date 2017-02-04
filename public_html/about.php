@@ -3,27 +3,27 @@
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10"
-		data-image-src="images/swing.jpg" data-natural-width="600" data-natural-height="600" id="about-parallax-header">
-		  <h1 class="parallax-header">ABOUT</h1>
+		data-image-src="images/swing.jpg" data-natural-width="638" data-natural-height="501" id="about-parallax-header">
+		  <h1 class="parallax-header">About</h1>
     </div>
 
     <section class="text-content">
       <div class="container">
         <?php include(__DIR__ . "/../resources/templates/flashMessages.php"); ?>
       	<div class="row">
-        Silver Cloud Society is a liaison of independent film producers and other creative minded professionals, including but not limited to writers, screenwriters, social media pros, social media geeks and publicists.  
+        <span class="milton-inline">Silver Cloud Society</span> is a liaison of independent film producers and other creative minded professionals, including but not limited to writers, screenwriters, social media pros, social media geeks and publicists.  
         </div>
         <br/>
         <div class="row">
-        Silver Cloud Society boasts of a vast array of talents from accredited universities and award winning freelancers.
+        <span class="milton-inline">Silver Cloud Society</span> boasts of a vast array of talents from accredited universities and award winning freelancers.
         </div>
         <br/>
         <div class="row">
-        The primary focal point of Silver Cloud Society is to bring artists together to highlight our multitude of talent, to develop internal projects and to increase visibility of Silver Cloud Society by producing competitive films.
+        The primary focal point of <span class="milton-inline">Silver Cloud Society</span> is to bring artists together to highlight our multitude of talent, to develop internal projects and to increase visibility of <span class="milton-inline">Silver Cloud Society</span> by producing competitive films.
         </div>
         <br/>
         <div class="row">
-        Silver Cloud Society actively recruits writers, senior editors and screenwriters both locally and internationally.
+        <span class="milton-inline">Silver Cloud Society</span> actively recruits writers, senior editors and screenwriters both locally and internationally.
         </div>
         <br/>
         <div class="row">
@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="-0.1" data-image-src="images/people.jpg" data-natural-width="700" data-natural-height="439">
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="-0.1" data-image-src="images/piano.jpg" data-natural-width="600" data-natural-height="600">
     	<!--<h3 class="parallax-header" id="parallax-header-2">We strive to be a creative, artistic and redemptive presence in the way we do our business and the quality of our work.</h3>-->
     </div>
 
