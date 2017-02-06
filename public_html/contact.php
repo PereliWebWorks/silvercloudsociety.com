@@ -3,7 +3,7 @@
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
-		data-image-src="images/piano.jpg" data-natural-width="640" data-natural-height="640">
+		data-image-src="images/people.jpg" data-natural-width="700" data-natural-height="439">
 		  <h1 class="parallax-header">Contact</h1>
     </div>
 

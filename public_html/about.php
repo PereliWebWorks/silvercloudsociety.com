@@ -4,7 +4,7 @@
 
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10"
 		data-image-src="images/swing.jpg" data-natural-width="638" data-natural-height="501" id="about-parallax-header">
-		  <h1 class="parallax-header">About</h1>
+		  <h1 class="parallax-header">About Us</h1>
     </div>
 
     <section class="text-content">

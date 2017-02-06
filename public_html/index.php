@@ -4,7 +4,9 @@
 
     <div class="parallax-container" data-parallax="scroll" data-position="top" data-speed=".2"
     data-bleed="10" data-image-src="images/car.jpg" data-natural-width="900" data-natural-height="624">
-		  <h1 class="parallax-header milton">Silver Cloud Society</h1>
+		  <h1 class="parallax-header milton animated-index-header">
+        Silver Cloud Society
+      </h1>
     </div>
 
     <section class="text-content">
@@ -25,7 +27,7 @@
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/skyline.jpg" data-natural-width="920" data-natural-height="612" data-speed="-.1">
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/skyline.jpg" data-natural-width="920" data-natural-height="612" data-speed="-0.1">
     	<!--<h3 class="parallax-header" id="parallax-header-2">We strive to be a creative, artistic and redemptive presence in the way we do our business and the quality of our work.</h3>-->
     </div>
 
