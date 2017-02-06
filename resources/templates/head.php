@@ -46,11 +46,6 @@
 
             $(".animated-index-header").textillate({ 
                                                     in: { effect: 'fadeIn' },
-                                                    out: { effect: 'flash' },
-                                                    callback: function()
-                                                    {
-                                                        $(".animated-index-header").textillate("out");
-                                                    }
                                                     });
 
             $(".milton-inline").each(function(index, element)

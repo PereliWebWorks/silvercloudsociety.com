@@ -21,6 +21,7 @@ body
   /*color: rgb(240, 241, 238);*/
   color: #bbb;
   font-size: 2em;
+  overflow-x: hidden;
 }
 
 #main-content
