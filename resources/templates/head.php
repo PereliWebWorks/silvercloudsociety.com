@@ -48,6 +48,7 @@
                                                     in: { effect: 'fadeIn' },
                                                     });
 
+            /*
             $(".milton-inline").each(function(index, element)
             {
                 $(element).textillate({
@@ -57,7 +58,8 @@
                     minDisplayTime: Math.floor(Math.random() * 7000) + 3000,
                     loop: true
                 });
-            });           
+            });  
+            */         
 
         });
     </script>

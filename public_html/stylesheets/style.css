@@ -70,11 +70,13 @@ h1
   font-family: milton;
 }
 
+/*
 .milton-inline
 {
   font-family: milton;
   font-size: 2em;
 }
+*/
 
 h1.parallax-header{
   padding-top: 2.5em;
