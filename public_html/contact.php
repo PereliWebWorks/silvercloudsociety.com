@@ -2,9 +2,15 @@
 <?php include(__DIR__ . "/../resources/templates/head.php"); ?>
 <?php include(__DIR__ . "/../resources/templates/navbar.php"); ?>
 
+  <!--
 	<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
 		data-image-src="images/people.jpg" data-natural-width="700" data-natural-height="439">
 		  <h1 class="parallax-header">Contact</h1>
+    </div>
+    -->
+
+   <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/skyline.jpg" data-natural-width="920" data-natural-height="612" data-speed="-0.1">
+      <h1 class="parallax-header">Contact</h1>
     </div>
 
 
