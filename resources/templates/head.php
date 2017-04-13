@@ -48,24 +48,11 @@
                                                     in: { effect: 'fadeIn' },
                                                     });
 
-            /*
-            $(".milton-inline").each(function(index, element)
-            {
-                $(element).textillate({
-                    in: { effect: 'flash'},
-                    out: { effect: 'flash'},
-                    initialDelay: Math.floor(Math.random() * 5000) + 1000,
-                    minDisplayTime: Math.floor(Math.random() * 7000) + 3000,
-                    loop: true
-                });
-            });  
-            */         
-
         });
     </script>
 <head>
 <body>
 <div id="main-content">
-<style>
 
-</style>
+
+

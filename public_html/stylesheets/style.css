@@ -150,10 +150,8 @@ input, textarea
 
 
 
-video {
-  width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+iframe{
+  margin: auto;
 }
 
 

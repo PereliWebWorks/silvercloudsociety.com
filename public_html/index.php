@@ -4,9 +4,7 @@
 
     <div class="parallax-container" data-parallax="scroll" data-position="top" data-speed=".2"
     data-bleed="10" data-image-src="images/car.jpg" data-natural-width="900" data-natural-height="624">
-		  <h1 class="parallax-header milton animated-index-header">
-        Silver Cloud Society
-      </h1>
+		  <h1 class="parallax-header milton animated-index-header"><b>Silver Cloud Society</b></h1>
     </div>
 
     <section class="text-content">
@@ -14,27 +12,44 @@
         <?php include(__DIR__ . "/../resources/templates/flashMessages.php"); ?>
         <div class="row">
 
-      	<span class="milton-inline">Silver Cloud Society</span> is a liaison of independent film producers and other creative minded professionals, including but not limited to writers, screenwriters, social media pros, social media geeks and publicists. 
+      	  We make films - we turn those Hollywood dreams into a made in Chicago reality!
+          <div>&nbsp;</div>
+          We believe that making films is not just about holding a camera and capturing the
+
+          scenes. It is all about putting your heart and soul in creating something magical.
+          <div>&nbsp;</div>
+          The heartbeat of Silver Cloud Society is our passion towards creating a utopia with our
+
+          multitalented family.
+          <div>&nbsp;</div>
         </div>
       	<div class="row">
       		<!--<img src="images/film_crew.jpg" class="centered_img"/>-->
-          <div class="col-xs-12 col-md-6 col-md-offset-3 video-container">
-            <video src="videos/chicago.mp4" controls="true"></video>
+          <div class="col-xs-12 col-md-6 col-md-offset-3 video-container text-center">
+            <!--<video src="videos/chicago.mp4" controls="true"></video>-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kY1HU7QlbFo" frameborder="0" allowfullscreen class="hidden-xs"></iframe>
+
+            <iframe src="https://www.youtube.com/embed/kY1HU7QlbFo" frameborder="0" allowfullscreen class="visible-xs"></iframe>
           </div>
       	</div>
       	
         <div class="row">
       	<h3>WHAT WE DO</h3>
-      	Watching a film is a lot like dreaming. A good film creates an immersive fantasy that we forget is not real--much like a dream. As we are unaware of how active our mind is while we dream, so the filmmaker works ferociously behind the scenes to create a seamless sensory tapestry.  As the architects of these celluloid dreams, we must strive on both a creative and a technical level.  Only in the union of these two disciplines is the viewer transported into living worlds, emotions, sensations, and thoughts that formerly only dreams could provoke.
+      	   We produce films, of course, but we’re more of a film production circle than a film
+
+          production ‘corporation’. We thrive on artistic passion, and that’s why we’ve created
+
+          this film production society in the first place.
+          <div>&nbsp;</div>
+          Unity is important to us. It’s our values we treasure above all else, and that’s why it’s so
+
+          important that we recruit people who want to be part of a unified collective with us.
         </div>
         <div>&nbsp;</div>
       </div>
     </section>
 
-    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" 
-        data-image-src="images/house.png" 
-        data-natural-width="1400" data-natural-height="1050" data-speed="-0.1">
-    	<!--<h3 class="parallax-header" id="parallax-header-2">We strive to be a creative, artistic and redemptive presence in the way we do our business and the quality of our work.</h3>-->
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/skyline.jpg" data-natural-width="920" data-natural-height="612" data-speed="-0.1">
     </div>
 
 <?php include(__DIR__ . "/../resources/templates/foot.php"); ?>
